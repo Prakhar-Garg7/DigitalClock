@@ -15,6 +15,7 @@ var minutesNow = currDate.getMinutes() ;
 
 if ( hoursNow > 12 ) {
                                         hoursNow -= 12 ;
+                                        hcount.textContent = hoursNow.toString().padStart(2, '0') ;
                                         ampm.textContent = ' PM ' ;
 }
 
@@ -36,17 +37,23 @@ switch ( monthsNow ) {
 
 function updateSeconds () {
                                         secondsNow += 1 ;
-                                        scount.textContent = secondsNow ;
+                                        if ( secondsNow >= 60 ) secondsNow -= 60 ;
+                                        scount.textContent = secondsNow.toString().padStart(2, '0') ;
 }
 
 function updateMinutes () {
                                         minutesNow += 1 ;
-                                        mcount.textContent = minutesNow ;
+                                        if ( minutesNow >= 60 ) minutesNow -= 60 ;
+                                        mcount.textContent = minutesNow.toString().padStart(2, '0') ;
 }
 
 function updateHours () {
                                         hoursNow += 1 ;
-                                        hcount.textContent = hoursNow ;
+                                        if ( hoursNow >= 12 ) {
+                                                                                ampm.textContent = ' PM ' ;
+                                        }
+                                        if ( hoursNow >= 12 ) hoursNow -= 12 ;
+                                        hcount.textContent = hoursNow.toString().padStart(2, '0') ;
 }
 
 setInterval( updateSeconds, 1000 ) ;
