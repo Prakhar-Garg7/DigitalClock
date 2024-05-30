@@ -3,3 +3,33 @@
                                         margin: 0;
                                         box-sizing: border-box;
 }
+.cont {
+                                        background: black;
+                                        width: 100vw;
+                                        height: 100vh;
+}
+.time{
+                                        padding: 20px;
+                                        padding: 50px;
+                                        color: white;
+                                        font-weight: bold;
+}
+#minutes {
+                                        font-size: 35px;
+                                        display: none;
+}
+#colon {
+                                        font-size: 35px;
+                                        display: none;
+}
+#seconds{
+                                        font-size: 35px;
+}
+#milliseconds{
+                                        font-size: 20px;
+}
+ul{
+                                        color: white;
+                                        font-size: 20px;
+                                        font-weight: 800;
+}

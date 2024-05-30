@@ -11,8 +11,17 @@
                                         <title>Stopwatch</title>
 </head>
 <body>
-                                        <div class="time">
-                                                                                <span id="seconds">00</span><span>       </span><span id="milliseconds">00</span>
+                                        <div class="cont">
+                                                                                <center><div class="time">
+                                                                                                                        <span id="minutes">00</span><span id="colon"> : </span><span id="seconds">00</span>&nbsp &nbsp<span id="milliseconds">00</span>
+                                                                                </div></center>
+                                                                                <center><button type="button" class="btn btn-primary" id="lap">Lap</button>
+                                                                                <button type="button" class="btn btn-primary" id="pauseplay">Pause</button>
+                                                                                <button type="button" class="btn btn-primary" id="reset">Reset</button></center>
+                                                                                <center><ul>
+                                                                                                                        
+                                                                                </ul></center>
+                                                                                
                                         </div>
                                         <script src="{% static 'js/stopwatch.js' %}"></script>              
 </body>
