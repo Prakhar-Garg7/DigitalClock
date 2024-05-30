@@ -1,0 +1,29 @@
+* {
+                                        padding: 0;
+                                        margin: 0;
+                                        box-sizing: border-box;
+                                        color: white;
+                                        font-size: 30px;
+                                        font-weight: bold;
+                                        letter-spacing: 1px;
+}
+.cont {
+                                        width: 100vw;
+                                        height: 100vh;
+                                        background: black;
+}
+.box{
+                                        width: 50vw;
+                                        height: 30vh;
+                                        margin: auto;
+                                        position: absolute;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        left: 50%;
+                                        transform: translateX(-50%);
+}
+input {
+                                        background: none;
+                                        border: none;
+                                        width: 35px;
+}

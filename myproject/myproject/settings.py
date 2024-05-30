@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'clock.apps.ClockConfig',
+    'timer1.apps.Timer1Config',
+    'stopwatch.apps.StopwatchConfig',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +58,9 @@ ROOT_URLCONF = "myproject.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, 'myapp', 'templates')],
+        "DIRS": [os.path.join(BASE_DIR, 'myapp', 'templates'), 
+            os.path.join(BASE_DIR, 'timer1', 'templates'),
+            os.path.join(BASE_DIR, 'stopwatch', 'templates'),],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
